@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Cadastrar Tarefas</h1>
+    <section>
+        <mat-form-field appearance="outline">
+            <mat-label>Noma da Tarefa</mat-label>
+            <input matInput [(ngModel)]="nome">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Descrição</mat-label>
+            <input matInput [(ngModel)]="descricao">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Nivel de importância da Tarefa</mat-label>
+            <input matInput [(ngModel)]="importancia">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Onde é a Tarefa</mat-label>
+            <input matInput [(ngModel)]="local">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Quando realizarei a tarefa</mat-label>
+            <input matInput [(ngModel)]="quando">
+        </mat-form-field>
+    
+        <div class="bottom-side">
+            <button (click)="onCreate()" mat-raised-button color="accent">Cadastrar</button>
+        </div>
+    </section>
+</div>
